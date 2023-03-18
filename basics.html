@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeable Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* selector {
+        name_rules: value;
+        name_properties: value;
+      } */
+
+      /* selector element by tags => h1 | p | li ... */
+      h1 {
+        color: red;
+      }
+
+      /* Selector element by class */
+      .completed {
+        color: blue;
+      }
+
+      /* Selector element by id */
+      #lorem {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Etiqueta de apertura <> -->
+    <!-- Etiqueta de cierre </ >  -->
+
+    <!-- Elemento! -->
+    <!-- <etiqueta atributo="Valor de atributo">Contenido</etiqueta> -->
+
+    <!-- Headings -->
+    <h1>Title 1</h1>
+    <h2 style="color: green; font-size: 50px">Title 2</h2>
+    <h3>Title 3</h3>
+    <h4>Title 4</h4>
+    <h5>Title 5</h5>
+    <h6>Title 6</h6>
+
+    <!-- Paragraph -->
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+
+    <!-- Unordered List -->
+    <!-- elementos de la lista -->
+    <ul>
+      <li class="completed">List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <!-- elementos de la lista -->
+    <ol>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ol>
+
+    <!-- Images -->
+    <!-- src = source -->
+    <!-- alt = "desciption" -->
+    <!-- width="100px" -->
+    <!-- height="100px" -->
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWLHFzHw0t26AAXNBr_O3gksyxuvIhhP7B6hpS3V8MK3ugRNjuj8PU-Tv3Lv110eKX-ik&usqp=CAU"
+      alt="Cat!"
+    />
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWLHFzHw0t26AAXNBr_O3gksyxuvIhhP7B6hpS3V8MK3ugRNjuj8PU-Tv3Lv110eKX-ik&usqp=CAU"
+      alt="Cat!"
+    />
+
+    <figure>
+      <img src="images/frenchie.jpeg" alt="Frenchie" />
+      <figcaption>This is a Frenchie</figcaption>
+    </figure>
+
+    <!-- Anchor -->
+    <div>
+      <a href="https://www.google.com/" target="_blank">Link to google</a>
+    </div>
+    <div>
+      <a href="/about.html">About Me</a>
+    </div>
+
+    <p><a href="#">Link de la asignacion</a> de hoy</p>
+
+    <!-- br | hr | Strong | em | b-->
+    <!-- em => emphasis -->
+    <!-- b => bold -->
+    <p class="first-paragraph">
+      Lorem ipsum, <strong>dolor</strong> sit amet consectetur adipisicing elit.
+      Deleniti ipsam ut voluptate deserunt nulla qui. <br />
+      Reprehenderit similique <em>voluptatum</em> nisi adipisci earum eius
+      libero, nulla, impedit praesentium officiis nam fuga. Eaque?
+    </p>
+    <hr />
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti ipsam
+      ut voluptate deserunt nulla qui. Reprehenderit similique voluptatum nisi
+      adipisci earum eius libero, nulla, impedit praesentium officiis nam fuga.
+      Eaque?
+    </p>
+
+    <hr />
+
+    <!-- div & span -->
+    <!-- div => etiqueta de bloque, agrupar elementos -->
+    <!-- span => etiqueta inline -->
+    <div>
+      <div>
+        <p id="lorem" class="first-paragraph" style="color: red">
+          M <span style="font-size: 1.2rem">Lorem ipsum dolor</span> sit amet
+          consectetur adipisicing elit. Laudantium veniam earum inventore
+          tempore id vero ipsum culpa, blanditiis, excepturi, rerum corporis
+          iusto accusamus. Iste voluptatum unde nobis, magni fugit in.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse animi
+          impedit reiciendis quidem vitae, magni voluptatum repellendus maiores
+          veniam obcaecati, dolorem rem cumque autem harum iure? Dicta neque
+          esse maxime?
+        </p>
+      </div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          veniam earum inventore tempore id vero ipsum culpa, blanditiis,
+          excepturi, rerum corporis iusto accusamus. Iste voluptatum unde nobis,
+          magni fugit in.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse animi
+          impedit reiciendis quidem vitae, magni voluptatum repellendus maiores
+          veniam obcaecati, dolorem rem cumque autem harum iure? Dicta neque
+          esse maxime?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
