@@ -200,7 +200,7 @@
   }
 
   .svg-icon {
-    float: left;
+    padding: left;
     margin-right: 10px;
     width: 1em;
     height: 1em;
