@@ -105,7 +105,7 @@
     display: grid;
     /* grid-template-columns: repeat(auto-fill, 1fr); */
     grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
     text-align: center;
     margin: 2rem 0;
     /* margin-top: 48px; */
@@ -114,8 +114,8 @@
   .my-hobbies__card {
     display: flex;
     flex-direction: column;
-    gap: 0.625em;
-    padding: .5em;
+    gap: 16px;
+    padding: 0.1em;
   }
   
   .hobby {
@@ -190,8 +190,22 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 16px;
+    text-align: center;
   }
   
   .hobby img {
     border-radius: 8px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .svg-icon {
+    float: left;
+    margin-right: 10px;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+    color: #10B981;
   }

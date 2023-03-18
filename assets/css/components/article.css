@@ -90,8 +90,11 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 16px;
+    text-align: center;
   }
   
   .article img {
     border-radius: 8px;
+    margin: auto;
+    text-align: center;
   }
