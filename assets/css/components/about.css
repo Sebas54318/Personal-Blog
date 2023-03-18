@@ -1,0 +1,197 @@
+.my-skills {
+    text-align: center;
+  }
+  
+  .my-skills__content {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    text-align: left;
+    margin: 1rem 0;
+  }
+  
+  .my-skills__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+    padding: .5em;
+  }
+  
+  .skill {
+    font-size: 18px;
+    /* rem => en relación con el :root => html */
+    /* 16px => 1rem ? => 18px => 1.125rem */
+    /* em => en relación con su elemento padre. */
+    /* 16px => 1em ? => 18px => 1.125em */
+    color: var(--gray-900)
+  }
+  
+  .skill h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  
+  .skill h2 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    margin-top: 56px;
+  }
+  
+  .skill p {
+    margin: 24px 0;
+    line-height: 32px;
+    font-weight: 300;
+  }
+  
+  .skill strong {
+    font-weight: 600;
+  }
+  
+  .skill a {
+    font-weight: 400;
+    color: var(--pink-700);
+  }
+  
+  .skill li {
+    font-weight: 300;
+    margin: 18px 0;
+    line-height: 32px;
+  }
+  
+  .skill blockquote {
+    margin: 24px 0;
+    padding: 16px 18px;
+    line-height: 32px;
+    font-weight: 300;  
+    border-left: 4px solid var(---stone-300);
+  
+    /* margin: 24px 0;
+    padding: 16px 18px;
+    background: #D6D3D1;
+    border-radius: 8px;
+    line-height: 32px;
+    font-weight: 400; */
+  
+    /* <em></em> =  */
+    /* font-style: italic; */
+  }
+  
+  .skill figure {
+    margin: 32px 0;
+  }
+  
+  .skill figcaption {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+  }
+  
+  .skill img {
+    border-radius: 8px;
+  }
+
+.my-hobbies {
+    text-align: center;
+    background-color: #E5E7EB;
+    margin-top: 48px;
+  }
+  
+  .my-hobbies__content {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fill, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    text-align: left;
+    margin: 1rem 0;
+  }
+  
+  .my-hobbies__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+    padding: .5em;
+  }
+  
+  .hobby {
+    font-size: 18px;
+    /* rem => en relación con el :root => html */
+    /* 16px => 1rem ? => 18px => 1.125rem */
+    /* em => en relación con su elemento padre. */
+    /* 16px => 1em ? => 18px => 1.125em */
+    color: var(--gray-900)
+  }
+  
+  .hobby h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  
+  .hobby h2 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    margin-top: 56px solid;
+  }
+  
+  .hobby p {
+    margin: 24px 0;
+    line-height: 32px;
+    font-weight: 300;
+  }
+  
+  .hobby strong {
+    font-weight: 600;
+  }
+  
+  .hobby a {
+    font-weight: 400;
+    color: var(--pink-700);
+  }
+  
+  .hobby li {
+    font-weight: 300;
+    margin: 18px 0;
+    line-height: 32px;
+  }
+  
+  .hobby blockquote {
+    margin: 24px 0;
+    padding: 16px 18px;
+    line-height: 32px;
+    font-weight: 300;  
+    border-left: 4px solid var(---stone-300);
+  
+    /* margin: 24px 0;
+    padding: 16px 18px;
+    background: #D6D3D1;
+    border-radius: 8px;
+    line-height: 32px;
+    font-weight: 400; */
+  
+    /* <em></em> =  */
+    /* font-style: italic; */
+  }
+  
+  .hobby figure {
+    margin: 32px 0;
+  }
+  
+  .hobby figcaption {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+  }
+  
+  .hobby img {
+    border-radius: 8px;
+  }
