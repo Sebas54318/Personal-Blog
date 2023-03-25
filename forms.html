@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <section class="section-md">
+      <div class="container-md">
+        <form action="/login" method="post">
+          <!-- Text fields -->
+          <input type="text" name="username" />
+          <input type="time" name="time" />
+          <input type="date" name="date" />
+          <input type="email" name="email" />
+          <input type="password" name="password" />
+          <input type="color" name="color" />
+          <input type="tel" name="phone" />
+
+          <!-- textarea -->
+          <div>
+            <textarea name="content">Add your comment</textarea>
+          </div>
+
+          <!-- Radio Buttons -->
+          <div>
+            <input type="radio" name="day" value="Friday1" checked /> Friday1
+            <input type="radio" name="day" value="Saturday1" /> Saturday1
+            <input type="radio" name="day" value="Sunday1" /> Sunday1
+          </div>
+          <br />
+          <div>
+            <input type="radio" name="other-day" value="Friday2" /> Friday2
+            <input type="radio" name="other-day" value="Saturday2" /> Saturday2
+            <input type="radio" name="other-day" value="Sunday2" checked />
+            Sunday2
+          </div>
+          <br />
+
+          <!-- Chexkbox -->
+          <div>
+            <input
+              type="checkbox"
+              name="checkbox-day"
+              value="Friday1"
+              checked
+            />
+            Friday1
+            <input type="checkbox" name="checkbox-day" value="Saturday1" />
+            Saturday1
+            <input type="checkbox" name="checkbox-day" value="Sunday1" />
+            Sunday1
+          </div>
+          <br />
+
+          <select name="select-day">
+            <option selected disabled hidden>Select one</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+          <br />
+          <br />
+
+          <!-- Other inputs -->
+          <input type="hidden" name="token" value="token-123123123" />
+
+          <!-- Organizing form elements -->
+
+          <!-- label -->
+          <label>Username: </label>
+          <input type="text" name="user" id="username" />
+          <br />
+          <br />
+
+          <label>
+            Username:
+            <input type="text" name="user" id="username" />
+          </label>
+          <br />
+          <br />
+
+          <label for="username-test">Username: </label>
+          <input type="text" name="user" id="username-test" />
+          <br />
+          <br />
+
+          <label>
+            <input type="radio" name="label-day" value="Friday1" checked />
+            Friday1
+          </label>
+          <label>
+            <input type="radio" name="label-day" value="Saturday1" /> Saturday1
+          </label>
+          <label>
+            <input type="radio" name="label-day" value="Sunday1" /> Sunday1
+          </label>
+          <br />
+          <br />
+
+          <label>
+            <input
+              type="checkbox"
+              name="label-checkbox-day"
+              value="Friday2"
+              checked
+            />
+            Friday2
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="label-checkbox-day"
+              value="Saturday2"
+            />
+            Saturday2
+          </label>
+          <label>
+            <input type="checkbox" name="label-checkbox-day" value="Sunday2" />
+            Sunday2
+          </label>
+          <br />
+          <br />
+
+          <fieldset>
+            <label>
+              Username:
+              <input type="text" name="username" placeholder="your username" />
+            </label>
+            <label>
+              password:
+              <input type="text" name="password" placeholder="your password" />
+            </label>
+          </fieldset>
+          <br />
+          <br />
+
+          <fieldset disabled>
+            <legend>Login:</legend>
+            <label>
+              Username:
+              <input type="text" name="username" />
+            </label>
+            <label>
+              password:
+              <input type="text" name="password" />
+            </label>
+          </fieldset>
+          <br />
+          <br />
+
+          <!-- Input attributes -->
+
+          <!-- Disabled! -->
+          <label>
+            disableb
+            <input type="text" name="other" disabled />
+          </label>
+          <br />
+          <br />
+
+          <!-- Placeholder -->
+          <label>
+            Email Address:
+            <input type="email" name="email" placeholder="name@domain.com" />
+          </label>
+          <br />
+          <br />
+
+          <textarea
+            name="comment"
+            placeholder="Comment in this text area"
+          ></textarea>
+          <br />
+          <br />
+
+          <!-- required -->
+          <label>
+            Email Address:
+            <input
+              type="email"
+              name="email"
+              placeholder="name@domain.com"
+              required
+            />
+          </label>
+          <br />
+          <br />
+
+          <!-- Pattern -->
+          <label for="email"> Enter your @codeable.la email: </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="name@codeable.la"
+            pattern=".+@codeable\.la"
+            required
+          />
+          <br />
+          <br />
+
+          <label>
+            Phone
+            <input
+              type="email"
+              name="email"
+              placeholder="+51 999000999"
+              pattern="/regex/"
+            />
+          </label>
+          <br />
+          <br />
+
+          <!-- button submit -->
+          <!-- <input type="submit" name="submit" value="Send!" /> -->
+          <button type="submit" name="submit">Send button</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

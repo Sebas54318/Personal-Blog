@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queries</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      /* == Desktop First - Media Querie Styles */
+
+      /* body {
+        background-color: tan;
+        color: black;
+      } */
+
+      /* En dimensiones de 992px de ancho o menos */
+      /* 0px <=> 992px */
+      /* @media (max-width: 992px) {
+        body {
+          background-color: blue;
+        }
+      } */
+
+      /* En dimensiones de 600px de ancho o menos */
+      /* 0px <=> 600px */
+      /* @media (max-width: 600px) {
+        body {
+          background-color: olive;
+        }
+      } */
+
+      /* == Mobile First - Media Querie Styles */
+
+      /* body {
+        background-color: tan;
+        color: black;
+      } */
+
+      /* tamaño => viewport */
+      /* En dimensiones de 700px de ancho a más */
+      /* 700px <=> Infinito (Npx) */
+      /* @media (min-width: 700px) {
+        body {
+          background-color: blue;
+          color: white;
+        }
+      } */
+
+      /* En dimensiones de 1600px de ancho a más */
+      /* 1600px <=> Infinito (Npx) */
+      /* @media (min-width: 1600px) {
+        body {
+          background-color: olive;
+          color: white;
+        }
+      } */
+
+      /* == Operators Media Queries Styles */
+
+      /* body {
+        background-color: tan;
+        color: black;
+      } */
+
+      /* AND operator */
+
+      /* En dimensiones de 700px de ancho a más */
+      /* AND un máximo de 1000px  */
+      /* 700px <=> 1000px (Npx) */
+      /* @media (min-width: 700px) and (max-width: 1000px) {
+        body {
+          background-color: blue;
+          color: white;
+        }
+      } */
+
+      /* Orientation */
+      /* Horizontal 👉 | vertical 👆 */
+      /* landscape | portrait */
+
+      /* En dimensiones de 700px de ancho a más */
+      /* AND en orientación landscape  */
+      /* 700px <=> Infinito (Npx) / landscape */
+      /* @media (min-width: 700px) and (orientation: landscape) {
+        body {
+          background-color: blue;
+          color: white;
+        }
+      } */
+
+      /* En dimensiones de 700px de ancho a más */
+      /* AND en orientación portrait  */
+      /* 700px <=> Infinito (Npx) / portrait */
+      /* @media (min-width: 700px) and (orientation: portrait) {
+        body {
+          background-color: green;
+          color: white;
+        }
+      } */
+
+      /* only => Previene que navegadores antiguos que no soportan queries apliquen los estilos */
+      /* screen => Destinada principalmente a las pantallas */
+
+      /* Mobile Styles */
+      /* solo navegadores que soporta queries y pantallas */
+      /* 0px <=> 400px */
+      @media only screen and (max-width: 400px) {
+        body {
+          background-color: tan;
+          color: white;
+        }
+      }
+
+      /* Tablet Styles */
+      /* solo navegadores que soporta queries y pantallas */
+      /* 401px <=> 960px */
+      @media only screen and (min-width: 401px) and (max-width: 960px) {
+        body {
+          background-color: blue;
+          color: white;
+        }
+
+        p {
+          /* visibility: hidden; */
+          display: none;
+        }
+      }
+
+      /* Desktop Styles */
+      /* solo navegadores que soporta queries y pantallas */
+      /* 961px <=> Infinito (Npx) */
+      @media only screen and (min-width: 961px) {
+        body {
+          background-color: green;
+          color: white;
+        }
+      }
+
+      /* Oculta el titulo al imprimir */
+      /* ctrl + P */
+      @media only print {
+        body {
+          color: red;
+        }
+
+        h1 {
+          display: none;
+        }
+
+        div {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-md">
+      <div class="container-md">
+        <h1>Resize the Browser window to see the effecT</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+          provident quasi consectetur nobis officiis maiores consequuntur
+          quisquam tempore, fugiat, nihil esse exercitationem molestiae error
+          omnis eveniet doloremque, sequi vero voluptatem!
+        </p>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugit
+          eaque, odit, quae ad porro asperiores quis maiores provident animi
+          tenetur debitis repellendus incidunt. Facilis numquam velit tenetur
+          magnam pariatur.
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

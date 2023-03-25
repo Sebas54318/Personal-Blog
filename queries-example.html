@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queries Example</title>
+    <style>
+      body {
+        /* viewport height */
+        margin: 0;
+        height: 100vh;
+      }
+
+      .sections {
+        height: 100vh;
+        display: grid;
+        /* grid-template: rows / columns */
+        grid-template: 80px 1fr / 30% 1fr 30%;
+        grid-template-areas:
+          "brand title title"
+          "message message message";
+      }
+
+      .sections__brand {
+        grid-area: brand;
+        background-color: red;
+      }
+      .sections__title {
+        grid-area: title;
+        background-color: blue;
+      }
+      .sections__list {
+        grid-area: list;
+        background-color: yellow;
+      }
+      .sections__message {
+        grid-area: message;
+        background-color: orange;
+      }
+      .sections__threads {
+        grid-area: threads;
+        background-color: green;
+      }
+
+      /* 401px <=> 960px */
+      @media only screen and (min-width: 401px) and (max-width: 960px) {
+        .sections {
+          /* grid-template: rows / columns */
+          grid-template-areas:
+            "brand title title"
+            "list message message";
+        }
+      }
+
+      /* 961px <=> InfinitoPX (Npx) */
+      @media only screen and (min-width: 961px) {
+        .sections {
+          grid-template: 80px 1fr / 20% 1fr 20%;
+          /* grid-template: rows / columns */
+          grid-template-areas:
+            "brand title title"
+            "list message threads";
+        }
+
+        .sections__message {
+          background-color: tan;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sections">
+      <section class="sections__list"></section>
+      <section class="sections__message"></section>
+      <section class="sections__brand"></section>
+      <section class="sections__title"></section>
+      <section class="sections__threads"></section>
+    </div>
+  </body>
+</html>

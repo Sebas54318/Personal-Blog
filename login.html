@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      fieldset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      form {
+        border: 1px solid var(--gray-400);
+        border-radius: 5px;
+        font-size: 0.9rem;
+        width: 300px;
+        /* Primer forma */
+        overflow: hidden;
+      }
+
+      input {
+        border-radius: 5px;
+        font-size: 0.9rem;
+        margin: 0;
+      }
+
+      .account-info {
+        padding: 20px;
+      }
+
+      .account-info label {
+        color: var(--secondary-dark);
+        display: block;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .account-action {
+        background-color: var(--background-dark);
+        border-top: 1px solid var(--gray-400);
+        padding: 20px;
+        /* Segunda forma */
+        /* border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; */
+
+        /* with flex */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .account-action__button {
+        border: 0;
+        background: linear-gradient(var(--primary), var(--primary-darker));
+        color: var(--white);
+        padding: 0.1rem 1rem;
+        font-weight: bold;
+      }
+
+      .account-action label {
+        color: var(--secondary);
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-md">
+      <div class="container-md">
+        <form>
+          <fieldset class="account-info">
+            <label>
+              Username:
+              <input type="text" name="username" id="username" />
+            </label>
+            <label>
+              Password:
+              <input type="password" name="password" id="password" />
+            </label>
+          </fieldset>
+          <fieldset class="account-action">
+            <!-- class="button button--primary button--sm" -->
+            <input
+              class="account-action__button"
+              type="submit"
+              name="submit"
+              value="Login"
+            />
+            <label>
+              <input type="checkbox" name="remember" required />
+              Stay signed in
+            </label>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
