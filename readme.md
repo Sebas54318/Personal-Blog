@@ -1,5 +1,7 @@
 # Codeable UI - Blog Post
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/49206279-c815-4ca1-b383-bd658485da3d/deploy-status)](https://app.netlify.com/sites/sebas54318/deploys)
+
 Today's assignment consists of creating a web page that renders a blog post. The detailed design can be found [here](https://www.figma.com/file/bTvI0it8i6PWUgL4P8kb5B/?node-id=32%3A1158), but the overall picture is shown below:
 
 ![Article](https://res.cloudinary.com/dwdgpw20b/image/upload/v1670249376/codeable/Screenshot_2022-12-05_at_09.08.42_ozjvn9.png)
